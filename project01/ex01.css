@@ -1,0 +1,72 @@
+h1{
+	color: orange;
+}
+
+#heading{
+	color: red;
+}
+.name{
+	color: blue;
+}
+
+:root{
+	--text_color:  red;
+
+}
+
+h2{
+	color: var(--text_color);
+}
+
+.box{
+	
+	width: 100px;
+	height: 100px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: left;
+}
+.box1{
+	/*color: darkred;*/
+	background-color: black;
+
+}
+
+.box2{
+	/*color: blue;*/
+	background-color: orange;
+}
+
+.box3{
+	/*color: violet;*/
+	background-color: darkred;
+	padding: 10px 20px;
+	border-width: 10px;
+	border-style: solid;
+	border-color: black;
+	/*border: 10px solid black;*/
+	margin-top: 20px;
+
+}
+
+.boxx{
+	width: 100px;
+	height: 100px;
+	color: violet;
+	background-color: orange;
+	padding: 16px;
+	border: 2px solid red;
+	box-sizing: border-box;
+	
+}
+
+
+
+
+
+
+
+
+
