@@ -1,0 +1,64 @@
+body{
+	margin: 0;
+	padding: 0;
+	/*background: #73A9AD;*/
+	background: linear-gradient(120deg,#2980b9,#8e44ad);
+}
+
+.box{
+	width: 300px;
+	padding: 40px;
+	position: absolute;/*có tác dụng giúp định vị trí tuyệt đối cho thành phần theo thành phần bao ngoài,hoặc ít nhất là theo cửa sổ trình duyệt*/
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%); /*Xác định một dịch chuyển 2D*/
+	text-align: center;
+	background: #002B5B;
+}
+
+.box h1{
+	color: white;
+	/*text-transform: uppercase;*//*Tất cả chữ trong văn bản thành chữ hoa. 
+	text-transform: lowercase; Tất cả chữ trong văn bản thành chữ thường.*/
+	font-weight: 500px;
+}
+.box input[type = "text"],.box input[type = "password"]{
+	border: 0;
+	background: none;
+	display: block;/*có tác dụng xác định thành phần hiển thị theo các hàng độc lập*/
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #277BC0;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;/*Outline là một đường kẻ xung quanh phần tử, nằm bên ngoài border để làm nổi bật phần tử*/
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;/*hiệu ứng ngay khi thay đổi các thuộc tính có trong CSS*/
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+	 /*:focus dùng để chọn tất cả các phần tử INPUT, TEXTAREA, SELECT đang được người dùng truy cập vào*/
+	width: 250px;
+	border-color: #2ecc71;
+}
+
+.box input[type = "submit"]{
+	border: 0;
+	background: none;
+	display: block;/*có tác dụng xác định thành phần hiển thị theo các hàng độc lập*/
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #2ecc71;
+	padding: 8px 10px;
+	width: 80px;
+	outline: none;/*Outline là một đường kẻ xung quanh phần tử, nằm bên ngoài border để làm nổi bật phần tử*/
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;/*đổi trỏ chuột*/
+}
+
+.box input[type = "submit"]:hover{
+	background: #2ecc71;
+}
