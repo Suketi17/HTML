@@ -1,12 +1,13 @@
 body{
 	margin: 0;
 	padding: 0;
-	/*background: #73A9AD;*/
+	background: #73A9AD;
 	background: linear-gradient(120deg,#2980b9,#8e44ad);
 }
 
 .box{
 	width: 300px;
+	height: 350px;
 	padding: 40px;
 	position: absolute;/*có tác dụng giúp định vị trí tuyệt đối cho thành phần theo thành phần bao ngoài,hoặc ít nhất là theo cửa sổ trình duyệt*/
 	top: 50%;
@@ -14,6 +15,7 @@ body{
 	transform: translate(-50%,-50%); /*Xác định một dịch chuyển 2D*/
 	text-align: center;
 	background: #002B5B;
+	border-radius: 10px;
 }
 
 .box h1{
@@ -61,4 +63,18 @@ body{
 
 .box input[type = "submit"]:hover{
 	background: #2ecc71;
+}
+
+.box a{
+	color: white;
+}
+.box a:hover{
+	cursor: pointer;
+	color: #2ecc71;
+}
+
+.box p{
+	color: red;
+	 display: inline; 
+	 margin-right: 10px;
 }
